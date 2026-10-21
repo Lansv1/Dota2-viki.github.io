@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #171719;
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding: 24px 0 18px;
+    border-bottom: 2px solid #b52b30;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.site-logo {
+    display: block;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #252527;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: #f1f1f1;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 8px 13px;
+    border: 1px solid #464649;
+    border-radius: 6px;
+    background: #252527;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    border-color: #d43b40;
+    background: #8f2429;
+    outline: none;
+}
+
+main {
+    padding: 24px 0;
+}
+
+main a {
+    color: #e34b50;
+}
+
+main a:hover,
+main a:focus-visible {
+    color: #ff777b;
+}
+
+section {
+    margin-bottom: 34px;
+    padding: 20px;
+    border: 1px solid #3d3d40;
+    border-left: 4px solid #b52b30;
+    border-radius: 8px;
+    background: #202022;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #e34b50;
+    font-size: 1.65rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+td {
+    padding: 14px;
+    border-top: 1px solid #414144;
+    border-bottom: 1px solid #414144;
+    background: #29292c;
+    vertical-align: middle;
+}
+
+td:first-child {
+    width: 240px;
+    border-left: 1px solid #414144;
+    border-radius: 7px 0 0 7px;
+}
+
+td:last-child {
+    border-right: 1px solid #414144;
+    border-radius: 0 7px 7px 0;
+    color: #e2e2e2;
+}
+
+td img {
+    display: block;
+    width: 100%;
+    height: 135px;
+    border-radius: 4px;
+    background: #1b1b1d;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.hero-page section {
+    margin-bottom: 24px;
+}
+
+.hero-intro {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.hero-portrait-placeholder,
+.ability-icon-placeholder,
+.item-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #68686c;
+    border-radius: 6px;
+    background: #1b1b1d;
+    color: #a9a9ad;
+    text-align: center;
+}
+
+.hero-portrait-placeholder {
+    min-height: 220px;
+    padding: 16px;
+}
+
+.hero-portrait {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border-radius: 6px;
+    background: #1b1b1d;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.hero-description h2 {
+    margin-bottom: 10px;
+}
+
+.hero-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.hero-fact {
+    padding: 12px;
+    border-left: 3px solid #b52b30;
+    border-radius: 4px;
+    background: #29292c;
+}
+
+.hero-fact h3 {
+    margin-bottom: 4px;
+    color: #e34b50;
+    font-size: 1rem;
+}
+
+.hero-fact p {
+    margin-bottom: 0;
+}
+
+.hero-eyebrow {
+    margin-bottom: 8px;
+    color: #e34b50;
+    font-weight: bold;
+}
+
+.ability-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.ability-card {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 16px;
+    align-items: center;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #414144;
+    border-radius: 7px;
+    background: #29292c;
+}
+
+.ability-card h3,
+.item-group h3 {
+    margin-bottom: 6px;
+    color: #e34b50;
+}
+
+.ability-card p {
+    margin-bottom: 0;
+    color: #e2e2e2;
+}
+
+.ability-icon-placeholder {
+    width: 96px;
+    height: 96px;
+    padding: 8px;
+    font-size: 0.8rem;
+}
+
+.ability-icon-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.item-groups {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.item-group {
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #414144;
+    border-radius: 7px;
+    background: #29292c;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-entry {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.item-placeholder {
+    width: 76px;
+    height: 76px;
+    padding: 6px;
+    border: 1px dashed #68686c;
+    border-radius: 6px;
+    background: #1b1b1d;
+    color: #a9a9ad;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.item-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: contain;
+}
+
+.item-description-placeholder {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    min-height: 76px;
+    padding: 10px;
+    border: 1px dashed #68686c;
+    border-radius: 6px;
+    background: #1b1b1d;
+    color: #a9a9ad;
+}
+
+.user-empty-space {
+    min-height: 100px;
+    border: 1px dashed #68686c;
+    border-radius: 6px;
+    background: #1b1b1d;
+}
+
+.farming-map {
+    display: block;
+    width: 100%;
+    max-height: 640px;
+    margin: 18px auto 0;
+    border: 1px solid #414144;
+    border-radius: 6px;
+    background: #1b1b1d;
+    object-fit: contain;
+}
+
+footer {
+    margin-bottom: 24px;
+    padding: 20px;
+    border-top: 2px solid #b52b30;
+    color: #bdbdbd;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 6px;
+}
+
+footer a {
+    color: #e34b50;
+}
+
+footer a:hover,
+footer a:focus-visible {
+    color: #ff777b;
+}
+
+@media (max-width: 600px) {
+    header,
+    main,
+    footer {
+        width: 95%;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    td:first-child {
+        width: 38%;
+    }
+
+    td img {
+        height: 100px;
+    }
+
+    .hero-intro {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-portrait-placeholder {
+        min-height: 180px;
+    }
+
+    .ability-list,
+    .item-groups {
+        grid-template-columns: 1fr;
+    }
+}
